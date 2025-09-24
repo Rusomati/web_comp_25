@@ -1,2 +1,2 @@
-# web_comp_training
-me documenting my training for a web competition?
+# web_comp_25
+the repo for a web competition
