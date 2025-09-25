@@ -1,0 +1,130 @@
+
+/* Start Variables */
+:root {
+    --main-color: #ccfff4;
+    
+    --secondary-color: #Ffffff;
+    --section-padding: 60px;
+    --section-background: #f6f6f6;
+    --main-duration: 0.5s;
+}
+
+/* End Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+ul {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+a {
+    text-decoration: none;
+}
+
+
+/* End Global Rules */
+#d3{
+    width: 100vw !important;
+    height: 100vh !important;
+    max-height: 550px !important;
+    max-width: 100%;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
+
+/* Start Header */
+.header {
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ccfff4a2;
+    border-radius: 5px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+}
+
+.icon img{
+    width: 60px;
+    height: 60px;
+    margin-left: 25px;
+    padding: 5px;
+}
+
+.header .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .nav li {
+    margin-right: 20px;
+    width: 20%;
+    height: 20%;
+    font-size: 22px;
+    padding: 15px 25px;
+    background-color: var(--main-color);
+    position: relative;
+    border-radius: 5px;
+}
+.header .nav a {
+    color: black;
+    
+}
+.header .nav li:hover {
+    background-color: black;
+    transition-duration: 2s;
+    color: white;
+}
+.header .nav li:hover a {
+    color: white;
+    transition-duration: 0.6s;
+}
