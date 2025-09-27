@@ -1,0 +1,85 @@
+.main_card{
+    background-color: var(--main-color);
+    width: 20%;
+    position: relative;
+    border-radius: 1em;
+
+    text-align: center;
+    color: white;
+    font-optical-sizing: true;
+    overflow: hidden;
+}
+
+.main_card > * {
+    pointer-events: none;
+    user-select: none;
+    user-drag: none; /**/
+}
+
+.main_card > h3{
+    position: relative;
+    transform: translateY(-8%);
+    transition: transform 0.5s ease;
+}
+
+
+.main_card:hover > h3{
+    transform: translateY(-300%);
+}
+
+.main_card > p{
+    position: absolute;
+    width: 90%;
+    z-index: 1;
+
+    top: 21%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin: 0px;
+
+    opacity: 0;
+    filter: blur(2em);
+    transition: filter 0.6s ease, opacity 0.6s ease;
+}
+
+.main_card:hover > p{
+    opacity: 1;
+    filter: blur(0em);
+}
+
+.main_card > img{
+    position: relative;
+    transform: scale(105%);
+    width: 100%;
+    object-fit: contain;
+    background-color: var(--secondary-color);
+
+    filter: blur(0px) brightness(100%);
+    transition: filter 0.6s ease, transform 0.6s ease;
+}
+
+.main_card:hover > img{
+    filter: blur(1em) brightness(50%);
+    transform: scale(225%);
+}
+
+.card_list{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.card_list > div{
+    margin: 1%;
+}
+
+.animLoad{
+    filter: blur(1em);
+    opacity: 0;
+    transition: filter 0.6s ease, opacity 0.6s ease;
+}
+
+.animLoad.animShow{
+    filter: blur(0em);
+    opacity: 1;
+}
